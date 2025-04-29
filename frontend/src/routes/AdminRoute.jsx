@@ -11,7 +11,7 @@ const AdminRoute = ({ children }) => {
 
   if (user.type !== 'admin') {
     return <Navigate to="/" replace />;
-  }efzz
+  }
 
   return children;
 };
