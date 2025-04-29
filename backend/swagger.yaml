@@ -7,7 +7,7 @@ info:
     This documentation covers user creation, editing, deletion, retrieval,
     and image uploads with validations for input and file format.
 servers:
-  - url: http://localhost:3000
+  - url: https://job-portal-web-application-backend.onrender.com
     description: Local development server on port 3000
   - description: SwaggerHub API Auto Mocking
     url: https://virtserver.swaggerhub.com/northeasternuniversi-585/Users/1.0.0

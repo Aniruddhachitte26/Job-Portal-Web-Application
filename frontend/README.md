@@ -140,7 +140,7 @@ project-root/
    ```
    npm run dev
    ```
-   The server will run on http://localhost:3000
+   The server will run on https://job-portal-web-application-backend.onrender.com
 
 ### Frontend Setup
 1. Navigate to the frontend directory:

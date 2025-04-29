@@ -47,7 +47,7 @@ const predefinedCompanies = [
     website: 'https://example.com/alphabet',
     rating: 4.7,
     description: "Parent company of Google and several former Google subsidiaries. Leader in search, cloud computing, software, and hardware with a mission to organize the world's information.",
-    imagePath: 'http://localhost:3000/images/alph.png'
+    imagePath: 'https://job-portal-web-application-backend.onrender.com/images/alph.png'
   },
   {
     id: 'amazon',
@@ -59,7 +59,7 @@ const predefinedCompanies = [
     website: 'https://example.com/amazon',
     rating: 4.5,
     description: 'Global leader in e-commerce, cloud computing, digital streaming, and artificial intelligence. Known for innovation and customer-centric approach across diverse businesses.',
-    imagePath: 'http://localhost:3000/images/amazon.jpg'
+    imagePath: 'https://job-portal-web-application-backend.onrender.com/images/amazon.jpg'
   },
   {
     id: 'apple',
@@ -71,7 +71,7 @@ const predefinedCompanies = [
     website: 'https://example.com/apple',
     rating: 4.8,
     description: 'Innovative technology company that designs, develops, and sells consumer electronics, computer software, and online services. Known for iPhone, Mac, and services.',
-    imagePath: 'http://localhost:3000/images/apple.png'
+    imagePath: 'https://job-portal-web-application-backend.onrender.com/images/apple.png'
   },
   {
     id: 'meta',
@@ -83,7 +83,7 @@ const predefinedCompanies = [
     website: 'https://example.com/meta',
     rating: 4.2,
     description: 'Leading social technology company focusing on building products that enable people to connect and share. Owner of Facebook, Instagram, WhatsApp, and developing metaverse technologies.',
-    imagePath: 'http://localhost:3000/images/meta.png'
+    imagePath: 'https://job-portal-web-application-backend.onrender.com/images/meta.png'
   },
   {
     id: 'microsoft',
@@ -95,7 +95,7 @@ const predefinedCompanies = [
     website: 'https://example.com/microsoft',
     rating: 4.6,
     description: 'Leading technology company developing software, hardware, and services. Known for Windows, Office, Azure cloud platform, and enterprise solutions.',
-    imagePath: 'http://localhost:3000/images/ms.png'
+    imagePath: 'https://job-portal-web-application-backend.onrender.com/images/ms.png'
   },
   {
     id: 'nvidia',
@@ -107,7 +107,7 @@ const predefinedCompanies = [
     website: 'https://example.com/nvidia',
     rating: 4.9,
     description: 'Leading computing technology company specializing in GPUs, AI, and accelerated computing. Transforming industries with innovations in gaming, data centers, and artificial intelligence.',
-    imagePath: 'http://localhost:3000/images/nv.png'
+    imagePath: 'https://job-portal-web-application-backend.onrender.com/images/nv.png'
   },
   {
     id: 'tesla',
@@ -119,7 +119,7 @@ const predefinedCompanies = [
     website: 'https://example.com/tesla',
     rating: 4.7,
     description: 'Electric vehicle and clean energy company aiming to accelerate the world\'s transition to sustainable energy. Leading innovations in electric cars, battery storage, and solar products.',
-    imagePath: 'http://localhost:3000/images/tesla.png'
+    imagePath: 'https://job-portal-web-application-backend.onrender.com/images/tesla.png'
   },
   {
     id: 'ibm',
@@ -131,7 +131,7 @@ const predefinedCompanies = [
     website: 'https://example.com/ibm',
     rating: 4.4,
     description: 'Global technology and consulting company with a portfolio spanning cloud computing, artificial intelligence, and business services. Pioneer in research and innovation.',
-    imagePath: 'http://localhost:3000/images/ibm.png'
+    imagePath: 'https://job-portal-web-application-backend.onrender.com/images/ibm.png'
   },
   {
     id: 'oracle',
@@ -143,7 +143,7 @@ const predefinedCompanies = [
     website: 'https://example.com/oracle',
     rating: 4.3,
     description: 'Multinational computer technology corporation specializing in database software, cloud engineered systems, and enterprise software products. Leading provider of enterprise solutions.',
-    imagePath: 'http://localhost:3000/images/oracle.png'
+    imagePath: 'https://job-portal-web-application-backend.onrender.com/images/oracle.png'
   },
   {
     id: 'salesforce',
@@ -155,7 +155,7 @@ const predefinedCompanies = [
     website: 'https://example.com/salesforce',
     rating: 4.5,
     description: 'Provider of customer relationship management software and applications focused on sales, customer service, marketing automation, analytics, and application development.',
-    imagePath: 'http://localhost:3000/images/sf.png'
+    imagePath: 'https://job-portal-web-application-backend.onrender.com/images/sf.png'
   }
 ];
 
@@ -180,7 +180,7 @@ const CompanyShowcase = () => {
         
         // Try to fetch from backend
         try {
-          const response = await axios.get('http://localhost:3000/getUser');
+          const response = await axios.get('https://job-portal-web-application-backend.onrender.com/getUser');
           // Assume response.data.users is an array of user objects
           const fetchedCompanies = response.data.users
             .filter(user => user.imagePath)
@@ -195,7 +195,7 @@ const CompanyShowcase = () => {
               website: user.website || "#",
               rating: user.rating || 4.0,
               description: user.description || "Company description not available.",
-              imagePath: user.imagePath.startsWith('http') ? user.imagePath : `http://localhost:3000${user.imagePath}`
+              imagePath: user.imagePath.startsWith('http') ? user.imagePath : `https://job-portal-web-application-backend.onrender.com${user.imagePath}`
             }));
             
           // Combine fetched companies with predefined companies

@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000' // Adjust this URL if your backend runs elsewhere
+  baseURL: 'https://job-portal-web-application-backend.onrender.com' // Adjust this URL if your backend runs elsewhere
 });
 
 // Request interceptor

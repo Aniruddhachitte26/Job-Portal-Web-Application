@@ -337,7 +337,7 @@ const EmployeesList = () => {
                                 <Avatar
                                   src={
                                     user.imagePath
-                                      ? `http://localhost:3000${user.imagePath}`
+                                      ? `https://job-portal-web-application-backend.onrender.com${user.imagePath}`
                                       : undefined
                                   }
                                   alt={user.fullName}
